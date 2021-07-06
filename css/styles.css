@@ -1,0 +1,151 @@
+/* OVERRIDES */
+/* переопредедлние дефолтных стилей браузера */
+html, body {
+    margin: 0;
+    padding: 0;
+    /* TODO: Add Railway */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 64px;
+}
+h3 {
+    font-size: 24px;
+}
+
+/* COMMON STYLES */
+/* общие CSS-стили, которые можно будет переиспользовать в будущем */
+.qs-icon-button {
+    border: none;
+    background: unset;
+    width: 36px;
+    height: 36px;
+}
+
+.qs-card {
+    background: white;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.qs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/* Дальше идут стили, которые задают отображение контретных специфичных элеме
+нтов на данной странице данного сайта */
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+
+    /* TODO: Прочитать подробнее!!! */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+
+header > .avatar {
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+/* MAIN */
+
+main {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section search */
+
+section.search {
+    padding: 50px 0;
+}
+
+.search__content-wrapper  {
+    display: flex;
+}
+
+.search__input {
+    flex: auto;
+    display: flex;
+    background: #eae2e2;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+.search__input input {
+    flex: auto;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+/* Section bunner */
+
+/* TODO: Add font Ssnsation */
+section.bunner {
+    background: url('/img/bunner-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 50px 0;
+}
+
+.bunner__content-wrapper {
+    text-align: center;
+}
+
+.bunner__main-offer {
+    margin: 20px 0;
+}
+
+/* Section goods */
+
+section.goods {
+    padding: 50px 0;
+}
+
+.goods__content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.good-card {
+    max-width: 390px;
+    width: 390px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.good-card__cover {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.good-card__good-name,
+.good-card__description {
+    padding: 10px;
+    margin: 0;
+}
+
+.good-card__good-name {
+    padding-bottom: 0;
+}
+
